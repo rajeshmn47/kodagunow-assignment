@@ -255,9 +255,7 @@ export default function BasicTabs() {
                 onChange={handleChange}
                 aria-label="basic tabs example"
               >
-                <Tab label="All 5" Icon={<PhoneIcon />} {...a11yProps(0)}>
-                  uio
-                </Tab>
+                <Tab label="All 5" {...a11yProps(0)} />
                 <Tab label="Open 5" {...a11yProps(1)} />
                 <Tab label="Submitted 5" {...a11yProps(2)} />
                 <Tab label="Approved 0" {...a11yProps(0)} />

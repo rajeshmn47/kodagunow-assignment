@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 const Container = styled(Grid)`
   .MuiBox-root {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 `;
 
@@ -34,6 +34,7 @@ const Talker = styled.div`
   display: flex;
   align-items: center;
   margin: 20px 0;
+  margin-bottom: 0;
   img {
     width: 50px;
     height: 50px;
@@ -46,7 +47,7 @@ const Talker = styled.div`
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-
+    margin-left: 20px;
     /* identical to box height */
 
     color: #000000;

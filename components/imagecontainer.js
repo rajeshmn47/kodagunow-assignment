@@ -10,6 +10,17 @@ const Container = styled.div`
   border-radius: 10px;
   padding: 15px 15px;
   box-sizing: border-box;
+  h6 {
+    font-family: "Urbanist";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    /* identical to box height */
+
+    color: #7950f2;
+  }
 `;
 
 const ImageContainer = styled(Grid)`
@@ -30,30 +41,42 @@ const ImageContainer = styled(Grid)`
   }
 `;
 
+const AddButton = styled.button`
+  box-sizing: border-box;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #e7e7ff;
+  border: 1px dashed #d9e0e8;
+`;
 export default function Images() {
   return (
     <Container>
       <Grid container>
-        <ImageContainer item md={2} lg={2}>
+        <ImageContainer item md={1.5} lg={1.5}>
           <img src="./Ellipse 358.png" alt="" width="400" />
           <h3>Akshitha</h3>
         </ImageContainer>
-        <ImageContainer item md={2} lg={2}>
+        <ImageContainer item md={1.5} lg={1.5}>
           <img src="./Ellipse 358(1).png" alt="" width="400" />
           <h3>Akshitha</h3>
         </ImageContainer>
-        <ImageContainer item md={2} lg={2}>
+        <ImageContainer item md={1.5} lg={1.5}>
           <img src="./Ellipse 358(2).png" alt="" width="400" />
           <h3>Akshitha</h3>
         </ImageContainer>
-        <ImageContainer item md={2} lg={2}>
+        <ImageContainer item md={1.5} lg={1.5}>
           <img src="./Ellipse 358(3).png" alt="" width="400" />
           <h3>Akshitha</h3>
         </ImageContainer>
-        <ImageContainer item md={2} lg={2}>
+        <ImageContainer item md={1.5} lg={1.5}>
           <img src="./Ellipse 358(4).png" alt="" width="400" />
           <h3>Akshitha</h3>
         </ImageContainer>
+        <AddButton>
+          <img src="./addicon.svg" alt="" />
+        </AddButton>
+        <h6></h6>
       </Grid>
     </Container>
   );
