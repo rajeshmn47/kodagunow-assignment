@@ -11,6 +11,8 @@ const Container = styled.div`
 const SidebarContainer = styled.div`
   background-color: #ffffff;
   width: 200px;
+  padding: 10px 10px;
+  box-sizing: border-box;
 `;
 
 const Tab = styled.div`
