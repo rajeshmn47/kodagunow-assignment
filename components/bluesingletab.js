@@ -180,7 +180,7 @@ const Date = styled.div`
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  margin-right: 20px;
+  float: right;
 
   /* identical to box height */
 
@@ -225,13 +225,13 @@ export default function SingleTab() {
             </Grid>
           </Grid>
           <Grid container justifyContent="space-between" alignItems="center">
-            <Grid item md={6} lg={6}>
+            <Grid item md={5} lg={5}>
               <Name>
                 <img src="./profile.svg" alt="" />
                 Akshitha
               </Name>
             </Grid>
-            <Grid item md={6} lg={6}>
+            <Grid item md={7} lg={7}>
               <Date>
                 <img src="./clock.svg" alt="" />
                 Aug 20, 2021 , 10:15 Nov
