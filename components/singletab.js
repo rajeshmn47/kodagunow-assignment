@@ -75,10 +75,11 @@ const Morebtn = styled.button`
   background: #fafafa;
   outline: none;
   float: right;
+  box-sizing: border-box;
   /* Grey */
   border: 0.25px solid #a0a3bd;
   border-radius: 5px;
-  padding: 10px 10px;
+  padding: 7px 10px;
   font-size: 12px;
 `;
 
@@ -203,7 +204,7 @@ export default function SingleTab() {
             </Grid>
             <Grid item md={6} lg={6}>
               <Morebtn>
-                <MoreHorizIcon style={{ fontSize: "19px" }} />
+                <MoreHorizIcon style={{ fontSize: "19px", color: "#000000" }} />
               </Morebtn>
             </Grid>
           </Grid>
