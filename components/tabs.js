@@ -13,7 +13,7 @@ import BlueSingleTab from "./bluesingletab";
 import Filter from "./filter";
 
 const Container = styled.div`
-  font-family: "Urbanist";
+  font-family: "Urbanist" !important;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -31,7 +31,9 @@ const Container = styled.div`
   }
   .MuiTab-root {
     text-transform: capitalize;
-    font-family: "Open Sans";
+    font-family: "Urbanist" !important;
+    font-size: 17px;
+    line-height: 20px;
     color: #636363;
   }
 `;
