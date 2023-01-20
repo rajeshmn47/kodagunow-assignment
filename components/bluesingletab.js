@@ -39,7 +39,7 @@ const SpanItem = styled.div`
 `;
 
 const Card = styled.div`
-  width: 351px;
+  width: 301px;
   height: 208px;
   background: #ffffff;
   border-radius: 10px;
@@ -106,7 +106,7 @@ const Branding = styled.div`
   font-family: "Urbanist";
   font-style: normal;
   font-weight: 600;
-  width: 73px;
+  width: 53px;
   height: 27px;
   font-size: 14px;
   line-height: 17px;
@@ -128,7 +128,7 @@ const Communication = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 10px 8px;
+  padding: 10px 0;
   background: #f8fafb;
 
   /* Grey */
@@ -137,7 +137,7 @@ const Communication = styled.div`
   font-family: "Urbanist";
   font-style: normal;
   font-weight: 600;
-  width: 93px;
+  width: 100%;
   height: 27px;
   font-size: 14px;
   line-height: 17px;
@@ -180,6 +180,7 @@ const Date = styled.div`
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
+  margin-right: 20px;
 
   /* identical to box height */
 
@@ -207,14 +208,19 @@ export default function SingleTab() {
             </Grid>
           </Grid>
           <Title>Create styleguide foundation</Title>
-          <Grid container justifyContent="space-between" alignItems="center">
-            <Grid item md={4} lg={4}>
+          <Grid
+            container
+            justifyContent="space-between"
+            alignItems="center"
+            spacing={2}
+          >
+            <Grid item md={3} lg={3}>
               <Branding>Branding</Branding>
             </Grid>
-            <Grid item md={4} lg={4}>
+            <Grid item md={3} lg={3}>
               <Branding>Branding</Branding>
             </Grid>
-            <Grid item md={4} lg={4}>
+            <Grid item md={6} lg={6}>
               <Communication>Communication</Communication>
             </Grid>
           </Grid>

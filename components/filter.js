@@ -10,7 +10,10 @@ const InputContainer = styled.div`
   width: 160px;
   position: relative;
   box-sizing: border-box;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e7e7ff;
   width: 261px;
   height: 51px;
 
@@ -26,6 +29,8 @@ const InputContainer = styled.div`
 const Input = styled.input`
   border: none;
   outline: none;
+  background: #e7e7ff;
+  margin-left: 35px;
 `;
 
 const FilterIcon = styled.div`
@@ -45,7 +50,7 @@ export default function Filter() {
     <Container>
       <InputContainer>
         <img src="./Vector(3).svg" alt="" style={{ position: "absolute" }} />
-        <Input />
+        <Input placeholder="Search" />
       </InputContainer>
 
       <FilterIcon>

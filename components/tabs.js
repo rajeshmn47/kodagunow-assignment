@@ -234,6 +234,11 @@ function a11yProps(index) {
 
 export default function BasicTabs() {
   const [value, setValue] = React.useState(0);
+  const [tabs, setTabs] = React.useState([]);
+
+  React.useEffect(() => {
+    setTabs([1, 2, 3, 4, 5]);
+  }, []);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -267,98 +272,101 @@ export default function BasicTabs() {
             </Grid>
           </Grid>
         </Box>
-        <TabPanel value={value} index={0}>
-          <Grid container spacing={2}>
-            <Grid item md={6} lg={6}>
-              <SingleTab />
+        {tabs.length > 0 && (
+          <TabPanel value={value} index={0}>
+            <Grid container spacing={2}>
+              <Grid item md={4} lg={4}>
+                <SingleTab />
+              </Grid>
+              <Grid item md={4} lg={4}>
+                <BlueSingleTab />
+              </Grid>
+              <Grid item md={4} lg={4}>
+                <SingleTab />
+              </Grid>
+              <Grid item md={4} lg={4}>
+                <SingleTab />
+              </Grid>
             </Grid>
-            <Grid item md={6} lg={6}>
-              <BlueSingleTab />
-            </Grid>
-            <Grid item md={6} lg={6}>
-              <SingleTab />
-            </Grid>
-            <Grid item md={6} lg={6}>
-              <SingleTab />
-            </Grid>
-          </Grid>
-        </TabPanel>
+          </TabPanel>
+        )}
         <TabPanel value={value} index={1}>
           <Grid container spacing={2}>
-            <Grid item md={6} lg={6}>
+            <Grid item md={4} lg={4}>
               <SingleTab />
             </Grid>
-            <Grid item md={6} lg={6}>
+            <Grid item md={4} lg={4}>
               <BlueSingleTab />
             </Grid>
-            <Grid item md={6} lg={6}>
+            <Grid item md={4} lg={4}>
               <SingleTab />
             </Grid>
-            <Grid item md={6} lg={6}>
+            <Grid item md={4} lg={4}>
               <SingleTab />
             </Grid>
           </Grid>
         </TabPanel>
+
         <TabPanel value={value} index={2}>
           <Grid container spacing={2}>
-            <Grid item md={6} lg={6}>
+            <Grid item md={4} lg={4}>
               <SingleTab />
             </Grid>
-            <Grid item md={6} lg={6}>
+            <Grid item md={4} lg={4}>
               <BlueSingleTab />
             </Grid>
-            <Grid item md={6} lg={6}>
+            <Grid item md={4} lg={4}>
               <SingleTab />
             </Grid>
-            <Grid item md={6} lg={6}>
+            <Grid item md={4} lg={4}>
               <SingleTab />
             </Grid>
           </Grid>
         </TabPanel>
         <TabPanel value={value} index={3}>
           <Grid container spacing={2}>
-            <Grid item md={6} lg={6}>
+            <Grid item md={4} lg={4}>
               <SingleTab />
             </Grid>
-            <Grid item md={6} lg={6}>
+            <Grid item md={4} lg={4}>
               <BlueSingleTab />
             </Grid>
-            <Grid item md={6} lg={6}>
+            <Grid item md={4} lg={4}>
               <SingleTab />
             </Grid>
-            <Grid item md={6} lg={6}>
+            <Grid item md={4} lg={4}>
               <SingleTab />
             </Grid>
           </Grid>
         </TabPanel>
         <TabPanel value={value} index={4}>
           <Grid container spacing={2}>
-            <Grid item md={6} lg={6}>
+            <Grid item md={4} lg={4}>
               <SingleTab />
             </Grid>
-            <Grid item md={6} lg={6}>
+            <Grid item md={4} lg={4}>
               <BlueSingleTab />
             </Grid>
-            <Grid item md={6} lg={6}>
+            <Grid item md={4} lg={4}>
               <SingleTab />
             </Grid>
-            <Grid item md={6} lg={6}>
+            <Grid item md={4} lg={4}>
               <SingleTab />
             </Grid>
           </Grid>
         </TabPanel>
         <TabPanel value={value} index={5}>
           <Grid container spacing={2}>
-            <Grid item md={6} lg={6}>
+            <Grid item md={4} lg={4}>
               <SingleTab />
             </Grid>
-            <Grid item md={6} lg={6}>
+            <Grid item md={4} lg={4}>
               <BlueSingleTab />
             </Grid>
-            <Grid item md={6} lg={6}>
+            <Grid item md={4} lg={4}>
               <SingleTab />
             </Grid>
-            <Grid item md={6} lg={6}>
+            <Grid item md={4} lg={4}>
               <SingleTab />
             </Grid>
           </Grid>

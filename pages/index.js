@@ -33,11 +33,12 @@ const TopBar = styled.div`
 const Talker = styled.div`
   display: flex;
   align-items: center;
-  margin: 80px 0;
+  margin: 20px 0;
   img {
     width: 50px;
     height: 50px;
     margin-right: 10px;
+    border-radius: 50%;
   }
   h6 {
     font-family: "Urbanist";
@@ -55,10 +56,10 @@ export default function Home() {
   return (
     <>
       <Container container spacing={2}>
-        <Grid item xs={4} md={3} lg={3}>
+        <Grid item xs={2} md={2} lg={2}>
           <Sidebar />
         </Grid>
-        <RightBar item xs={4} md={9} lg={9}>
+        <RightBar item xs={10} md={10} lg={10}>
           <TopBar>
             <UserContainer />
           </TopBar>

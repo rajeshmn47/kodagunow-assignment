@@ -39,7 +39,7 @@ const SpanItem = styled.div`
 `;
 
 const Card = styled.div`
-  width: 351px;
+  width: 301px;
   height: 208px;
   background: #ffffff;
   border-radius: 10px;
@@ -97,7 +97,7 @@ const Branding = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 10px 8px;
+  padding: 10px 2px;
   background: #f8fafb;
 
   /* Grey */
@@ -106,7 +106,7 @@ const Branding = styled.div`
   font-family: "Urbanist";
   font-style: normal;
   font-weight: 600;
-  width: 73px;
+  width: 100%;
   height: 27px;
   font-size: 14px;
   line-height: 17px;
@@ -128,19 +128,20 @@ const Communication = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 10px 8px;
+  padding: 23px 8px;
   background: #f8fafb;
-
+  width: 100%;
   /* Grey */
   border: 0.25px solid #a0a3bd;
   border-radius: 5px;
   font-family: "Urbanist";
   font-style: normal;
   font-weight: 600;
-  width: 93px;
+  width: 100%;
   height: 27px;
   font-size: 14px;
   line-height: 17px;
+  float: right;
 
   /* identical to box height */
   font-feature-settings: "tnum" on, "lnum" on;
@@ -149,9 +150,7 @@ const Communication = styled.div`
   color: #a0a3bd;
 
   /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  box-sizing: border-box;
 `;
 
 const Name = styled.div`
@@ -175,11 +174,13 @@ const Name = styled.div`
 const Date = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-between;
   font-family: "Urbanist";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
+  float: right;
 
   /* identical to box height */
 
@@ -207,25 +208,30 @@ export default function SingleTab() {
             </Grid>
           </Grid>
           <Title>Create styleguide foundation</Title>
-          <Grid container justifyContent="space-between" alignItems="center">
-            <Grid item md={4} lg={4}>
+          <Grid
+            container
+            justifyContent="space-between"
+            alignItems="center"
+            spacing={2}
+          >
+            <Grid item md={3} lg={3}>
               <Branding>Branding</Branding>
             </Grid>
-            <Grid item md={4} lg={4}>
+            <Grid item md={3} lg={3}>
               <Branding>Branding</Branding>
             </Grid>
-            <Grid item md={4} lg={4}>
+            <Grid item md={6} lg={6}>
               <Communication>Communication</Communication>
             </Grid>
           </Grid>
           <Grid container justifyContent="space-between" alignItems="center">
-            <Grid item md={6} lg={6}>
+            <Grid item md={5} lg={5}>
               <Name>
                 <img src="./profile.svg" alt="" />
                 Akshitha
               </Name>
             </Grid>
-            <Grid item md={6} lg={6}>
+            <Grid item md={7} lg={7}>
               <Date>
                 <img src="./clock.svg" alt="" />
                 Aug 20, 2021 , 10:15 Nov
